@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodPlace - Delicious Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🍔</span>
+                <span class="logo-text">Food<span class="highlight">Place</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Taste The <span class="text-red">Best</span> Food In Town</h1>
+            <p class="hero-subtitle">Experience culinary excellence with our handcrafted dishes made from the freshest ingredients</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Explore Menu</button>
+                <button class="btn-secondary">Watch Video</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">🍕</div>
+                <h3>Fresh Food</h3>
+                <p>Made with the finest ingredients daily</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Get your food delivered in 30 minutes</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Best Prices</h3>
+                <p>Affordable meals for everyone</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3>Top Rated</h3>
+                <p>Trusted by thousands of customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our <span class="text-red">Menu</span></h2>
+            <p class="section-subtitle">Discover our delicious selection of dishes</p>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="burger">Burgers</button>
+                <button class="filter-btn" data-filter="pizza">Pizza</button>
+                <button class="filter-btn" data-filter="pasta">Pasta</button>
+                <button class="filter-btn" data-filter="salad">Salads</button>
+                <button class="filter-btn" data-filter="nigerian">Nigerian</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category="burger">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop" alt="Classic Burger">
+                        <span class="price-tag">$12.99 | ₦5,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Classic Burger</h3>
+                        <p>Juicy beef patty with fresh lettuce, tomatoes, and our secret sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&h=400&fit=crop" alt="Pepperoni Pizza">
+                        <span class="price-tag">$15.99 | ₦6,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Loaded with pepperoni, cheese, and our homemade tomato sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=400&fit=crop" alt="Italian Pasta">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Italian Pasta</h3>
+                        <p>Creamy Alfredo sauce with perfectly cooked spaghetti</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="burger">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&h=400&fit=crop" alt="BBQ Bacon Burger">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>BBQ Bacon Burger</h3>
+                        <p>Smoky BBQ sauce, crispy bacon, and melted cheddar cheese</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop" alt="Supreme Pizza">
+                        <span class="price-tag">$17.99 | ₦7,600</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Supreme Pizza</h3>
+                        <p>Loaded with mushrooms, peppers, onions, and extra cheese</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="salad">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=600&h=400&fit=crop" alt="Caesar Salad">
+                        <span class="price-tag">$9.99 | ₦4,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Caesar Salad</h3>
+                        <p>Crispy romaine lettuce with parmesan and Caesar dressing</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1622974420979-85893dd71d98?w=600&h=400&fit=crop" alt="Spaghetti Bolognese">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Spaghetti Bolognese</h3>
+                        <p>Rich meat sauce with fresh herbs over perfectly cooked pasta</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="salad">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop" alt="Greek Salad">
+                        <span class="price-tag">$11.99 | ₦5,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Greek Salad</h3>
+                        <p>Fresh vegetables with feta cheese and olives</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/42788e49474248dba75fdfd47114024a/BFV43575_PartyRiceAroundAfrica-FB-V2.jpg" alt="Jollof Rice">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jollof Rice</h3>
+                        <p>Nigeria's signature dish - perfectly spiced rice in rich tomato sauce with grilled chicken</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://www.pointoneafricancuisine.com/wp-content/uploads/2021/05/Egusi.jpeg"alt="Egusi Soup">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Egusi Soup</h3>
+                        <p>Rich melon seed soup with assorted meats, stockfish, and fresh vegetables</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.FvrX-_NBMcJ-97FhCPXrZQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Suya">
+                        <span class="price-tag">$11.99 | ₦5,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Suya</h3>
+                        <p>Spicy grilled beef skewers seasoned with traditional yaji spice blend and onions</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://desirerecipes.com/wp-content/uploads/2022/02/image-24.jpg" alt="Pounded Yam & Egusi">
+                        <span class="price-tag">$15.99 | ₦6,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pounded Yam & Egusi</h3>
+                        <p>Smooth pounded yam served with hearty egusi soup and assorted proteins</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://africanchopbetter.com/wp-content/uploads/sites/110/2024/04/pepper-soup-3.jpg" alt="Pepper Soup">
+                        <span class="price-tag">$12.99 | ₦5,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pepper Soup</h3>
+                        <p>Aromatic spicy broth with tender goat meat and traditional Nigerian spices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://afrifoodnetwork.com/wp-content/uploads/2024/01/puff-puff.jpg" alt="Puff Puff">
+                        <span class="price-tag">$6.99 | ₦2,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Puff Puff</h3>
+                        <p>Fluffy deep-fried dough balls - Nigeria's favorite snack, lightly sweetened</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://cdn.guardian.ng/wp-content/uploads/2017/07/moi-1960x1152.jpeg" alt="Moi Moi">
+                        <span class="price-tag">$7.99 | ₦3,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Moi Moi</h3>
+                        <p>Steamed bean pudding with eggs, fish, and peppers - a Nigerian delicacy</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&h=400&fit=crop" alt="Efo Riro">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Efo Riro</h3>
+                        <p>Rich Yoruba spinach stew with assorted meats, crayfish, and locust beans</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://sisijemimah.com/wp-content/uploads/2015/07/IMG_0011_20200824075644597-scaled.jpg" alt="Fried Rice">
+                        <span class="price-tag">$12.99 | ₦5,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nigerian Fried Rice</h3>
+                        <p>Colorful stir-fried rice with mixed vegetables, liver, and seasoned chicken</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop" alt="Ofada Rice">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ofada Rice & Sauce</h3>
+                        <p>Local unpolished rice served with spicy ofada sauce and assorted meats</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&h=400&fit=crop" alt="Coconut Rice">
+                        <span class="price-tag">$11.99 | ₦5,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Coconut Rice</h3>
+                        <p>Fragrant rice cooked in creamy coconut milk with savory spices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://rookzkitchen.com/wp-content/uploads/2023/03/Rice-Stew-Dodo-800.jpg" alt="White Rice & Stew">
+                        <span class="price-tag">$10.99 | ₦4,600</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>White Rice & Tomato Stew</h3>
+                        <p>Fluffy white rice served with rich Nigerian-style tomato stew</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://img-global.cpcdn.com/recipes/6002bb2f4c51fdd8/680x482cq70/fried-yam-with-egg-sauce-recipe-main-photo.jpg" alt="Yam & Egg Sauce">
+                        <span class="price-tag">$9.99 | ₦4,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fried Yam & Egg Sauce</h3>
+                        <p>Crispy fried yam with savory scrambled egg and pepper sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://i.ytimg.com/vi/9Czab6enk10/maxresdefault.jpg" alt="Beans & Plantain">
+                        <span class="price-tag">$9.99 | ₦4,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Beans & Fried Plantain</h3>
+                        <p>Well-seasoned beans served with golden fried plantain slices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://3.bp.blogspot.com/-a8-5WMmGbPI/UY00_4h7s3I/AAAAAAAAAvk/XA4KE3tAn08/s1600/akara+nigerian+akara.jpg" alt="Akara">
+                        <span class="price-tag">$5.99 | ₦2,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Akara (Bean Cakes)</h3>
+                        <p>Deep-fried bean fritters - crispy outside, fluffy inside</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/originals/bd/04/ba/bd04baaa32249fdd24afc6514fa8b4d7.png" alt="Zobo Drink">
+                        <span class="price-tag">$3.99 | ₦1,700</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Zobo Drink</h3>
+                        <p>Refreshing hibiscus flower drink infused with ginger and cloves</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://kentetv.com/wp-content/uploads/2023/11/Chin_Chin-scaled.webp" alt="Chin Chin">
+                        <span class="price-tag">$4.99 | ₦2,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chin Chin</h3>
+                        <p>Crunchy fried pastry snack - Nigeria's favorite party treat</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9669ba?w=600&h=400&fit=crop" alt="Boli">
+                        <span class="price-tag">$6.99 | ₦2,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Boli (Roasted Plantain)</h3>
+                        <p>Charcoal-roasted plantain served with spicy groundnut sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop" alt="Meat Pie">
+                        <span class="price-tag">$5.99 | ₦2,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nigerian Meat Pie</h3>
+                        <p>Flaky pastry filled with seasoned minced meat, potatoes, and carrots</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558961367-fa8c63c7e9f0?w=600&h=400&fit=crop" alt="Kilishi">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kilishi</h3>
+                        <p>Nigerian beef jerky - dried, spiced, and coated in peanut paste</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=400&fit=crop" alt="Asun">
+                        <span class="price-tag">$15.99 | ₦6,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Asun (Spicy Goat Meat)</h3>
+                        <p>Grilled goat meat tossed in spicy pepper sauce with onions</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&h=400&fit=crop" alt="Grilled Fish">
+                        <span class="price-tag">$16.99 | ₦7,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Grilled Croaker Fish</h3>
+                        <p>Whole croaker fish grilled with pepper, onions, and Nigerian spices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop" alt="Ewa Agoyin">
+                        <span class="price-tag">$9.99 | ₦4,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ewa Agoyin</h3>
+                        <p>Mushy beans served with spicy Agege bread and palm oil sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop" alt="Ogbono Soup">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ogbono Soup</h3>
+                        <p>Draw soup made from wild mango seeds with assorted meats and fish</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547592180-85e706158d1a?w=600&h=400&fit=crop" alt="Banga Soup">
+                        <span class="price-tag">$15.99 | ₦6,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Banga Soup</h3>
+                        <p>Delta-style palm nut soup with fresh fish and aromatic spices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1594041680534-e8c86e589884?w=600&h=400&fit=crop" alt="Afang Soup">
+                        <span class="price-tag">$15.99 | ₦6,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Afang Soup</h3>
+                        <p>Calabar delicacy made with afang leaves, waterleaf, and assorted seafood</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=600&h=400&fit=crop" alt="Edikang Ikong">
+                        <span class="price-tag">$16.99 | ₦7,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Edikang Ikong Soup</h3>
+                        <p>Premium vegetable soup with waterleaf, fluted pumpkin, and assorted proteins</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://2.bp.blogspot.com/-KCzKs2oRnF8/WadbgaCCGpI/AAAAAAAAAdE/Yrf4pt6DwSE6ievfwx-34oDsEruzteIYwCLcBGAs/s1600/15035612_343094192731914_45047158893707264_n.jpg" alt="Amala & Ewedu">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Amala & Ewedu</h3>
+                        <p>Yam flour dough served with jute leaf soup and gbegiri</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=400&fit=crop" alt="Semovita & Soup">
+                        <span class="price-tag">$12.99 | ₦5,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Semovita & Egusi</h3>
+                        <p>Smooth semolina dough paired with rich egusi soup</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1590301157890-4810ed352743?w=600&h=400&fit=crop" alt="Eba & Okro">
+                        <span class="price-tag">$12.99 | ₦5,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Eba & Okro Soup</h3>
+                        <p>Garri dough served with slimy okra soup loaded with seafood</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1606754786141-5518c8fe1537?w=600&h=400&fit=crop" alt="Tuwo Shinkafa">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tuwo Shinkafa & Miyan Kuka</h3>
+                        <p>Northern Nigerian rice dough with baobab leaf soup and dried fish</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&h=400&fit=crop" alt="Suya Platter">
+                        <span class="price-tag">$18.99 | ₦8,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Suya Platter</h3>
+                        <p>Mixed suya platter - beef, chicken, and kidney with extra yaji spice</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop" alt="Jollof & Grilled Chicken">
+                        <span class="price-tag">$16.99 | ₦7,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jollof & Grilled Chicken</h3>
+                        <p>Party-style jollof rice with whole grilled chicken leg</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-85af133407c4?w=600&h=400&fit=crop" alt="Nkwobi">
+                        <span class="price-tag">$17.99 | ₦7,600</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nkwobi</h3>
+                        <p>Igbo delicacy - cow foot cooked in spicy palm oil sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544145945-f904754d9f46?w=600&h=400&fit=crop" alt="Isi Ewu">
+                        <span class="price-tag">$19.99 | ₦8,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Isi Ewu</h3>
+                        <p>Spicy goat head pepper soup - a Nigerian delicacy for special occasions</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9f17212?w=600&h=400&fit=crop" alt="Abacha">
+                        <span class="price-tag">$11.99 | ₦5,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Abacha (African Salad)</h3>
+                        <p>Shredded cassava flakes with ugba, fish, and palm oil dressing</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1541592106383-b3a745323675?w=600&h=400&fit=crop" alt="Garri Soakings">
+                        <span class="price-tag">$5.99 | ₦2,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Garri Soakings</h3>
+                        <p>Gari with milk, groundnuts, coconut, and sugar - quick Nigerian snack</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9669ba?w=600&h=400&fit=crop" alt="Bole & Fish">
+                        <span class="price-tag">$12.99 | ₦5,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bole & Fish</h3>
+                        <p>Roasted plantain with grilled tilapia fish and pepper sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&h=400&fit=crop" alt="Fresh Squeeze">
+                        <span class="price-tag">$4.99 | ₦2,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fresh Squeeze (Zobo Mix)</h3>
+                        <p>Zobo blended with pineapple, ginger, and cucumber</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&h=400&fit=crop" alt="Kunu Drink">
+                        <span class="price-tag">$3.99 | ₦1,700</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kunu Drink</h3>
+                        <p>Traditional millet-based drink with ginger, cloves, and sweet potatoes</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509822929063-6a9c9d5e9c39?w=600&h=400&fit=crop" alt="Tiger Nut Milk">
+                        <span class="price-tag">$5.99 | ₦2,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tiger Nut Milk (Kunnu Aya)</h3>
+                        <p>Creamy, naturally sweet northern Nigerian beverage</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop" alt="Chicken Pie">
+                        <span class="price-tag">$5.99 | ₦2,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chicken Pie</h3>
+                        <p>Flaky pastry filled with tender chicken and vegetables</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558961367-fa8c63c7e9f0?w=600&h=400&fit=crop" alt="Spring Rolls">
+                        <span class="price-tag">$4.99 | ₦2,100</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nigerian Spring Rolls</h3>
+                        <p>Crispy rolls filled with cabbage, carrots, and Nigerian spices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&h=400&fit=crop" alt="Peppered Snail">
+                        <span class="price-tag">$16.99 | ₦7,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Peppered Snail</h3>
+                        <p>Giant grilled snails tossed in spicy pepper sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop" alt="Peppered Gizzard">
+                        <span class="price-tag">$13.99 | ₦5,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Peppered Gizzard</h3>
+                        <p>Tender gizzard fried and tossed in rich pepper sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&h=400&fit=crop" alt="Peppered Turkey">
+                        <span class="price-tag">$17.99 | ₦7,600</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Peppered Turkey</h3>
+                        <p>Fried turkey pieces coated in spicy Nigerian pepper sauce</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop" alt="Yam Porridge">
+                        <span class="price-tag">$10.99 | ₦4,600</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Yam Porridge (Asaro)</h3>
+                        <p>Mashed yam cooked in rich palm oil sauce with peppers and crayfish</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-85af133407c4?w=600&h=400&fit=crop" alt="Unripe Plantain Porridge">
+                        <span class="price-tag">$9.99 | ₦4,200</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Plantain Porridge</h3>
+                        <p>Unripe plantain cooked in savory palm oil stew with fish</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=400&fit=crop" alt="Stewed Beans">
+                        <span class="price-tag">$8.99 | ₦3,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Stewed Beans</h3>
+                        <p>Honey beans stewed in palm oil with smoked fish and peppers</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop" alt="Oha Soup">
+                        <span class="price-tag">$15.99 | ₦6,800</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Oha Soup</h3>
+                        <p>Igbo traditional soup made with oha leaves, cocoyam, and assorted meats</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1543339308-d59500848c66?w=600&h=400&fit=crop" alt="Starch & Soup">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Starch & Banga</h3>
+                        <p>Delta starch served with rich banga soup - a Niger Delta favorite</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600&h=400&fit=crop" alt="Fufu & Bitterleaf">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fufu & Bitterleaf Soup</h3>
+                        <p>Pounded cassava and plantain with traditional bitterleaf soup</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1664478546384-d57ffe74379c?w=600&h=400&fit=crop" alt="Coconut Jollof">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Coconut Jollof Rice</h3>
+                        <p>Jollof rice cooked in coconut milk with tropical spices</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1622974420979-85893dd71d98?w=600&h=400&fit=crop" alt="Native Jollof">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Native Jollof Rice</h3>
+                        <p>Smoky party jollof with that authentic firewood taste</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547592180-85e706158d1a?w=600&h=400&fit=crop" alt="Seafood Okro">
+                        <span class="price-tag">$19.99 | ₦8,500</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Seafood Okro Soup</h3>
+                        <p>Premium okro soup loaded with prawns, crab, periwinkle, and fish</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1604329768748-3da8f5c17b3b?w=600&h=400&fit=crop" alt="Bolli Deluxe">
+                        <span class="price-tag">$14.99 | ₦6,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Boli Deluxe</h3>
+                        <p>Roasted plantain with groundnut, coconut, and spicy sauce combo</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&h=400&fit=crop" alt="Chapman">
+                        <span class="price-tag">$6.99 | ₦2,900</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nigerian Chapman</h3>
+                        <p>Classic Nigerian cocktail - Fanta, Sprite, blackcurrant, and cucumber</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★★</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="nigerian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&h=400&fit=crop" alt="Akamu & Akara">
+                        <span class="price-tag">$7.99 | ₦3,400</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Akamu & Akara Combo</h3>
+                        <p>Smooth pap with bean cakes - classic Nigerian breakfast</p>
+                        <div class="card-footer">
+                            <div class="rating">★★★★☆</div>
+                            <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials">
+        <div class="container">
+            <h2 class="section-title">Today's <span class="text-red">Specials</span></h2>
+            <p class="section-subtitle">Limited time offers you don't want to miss</p>
+
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-badge">50% OFF</div>
+                    <div class="special-image">
+                        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=600&h=400&fit=crop" alt="Family Combo">
+                    </div>
+                    <h3>Family Combo</h3>
+                    <p>4 Burgers + 4 Fries + 4 Drinks</p>
+                    <div class="price">
+                        <span class="old-price">$59.99 | ₦25,500</span>
+                        <span class="new-price">$29.99 | ₦12,700</span>
+                    </div>
+                    <button class="btn-primary">Order Now</button>
+                </div>
+
+                <div class="special-card">
+                    <div class="special-badge">30% OFF</div>
+                    <div class="special-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop" alt="Pizza Deal">
+                    </div>
+                    <h3>Pizza Deal</h3>
+                    <p>2 Large Pizzas + Garlic Bread</p>
+                    <div class="price">
+                        <span class="old-price">$45.99 | ₦19,500</span>
+                        <span class="new-price">$32.99 | ₦14,000</span>
+                    </div>
+                    <button class="btn-primary">Order Now</button>
+                </div>
+
+                <div class="special-card">
+                    <div class="special-badge">40% OFF</div>
+                    <div class="special-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop" alt="Healthy Bowl">
+                    </div>
+                    <h3>Healthy Bowl</h3>
+                    <p>Salad + Grilled Chicken + Dessert</p>
+                    <div class="price">
+                        <span class="old-price">$35.99 | ₦15,300</span>
+                        <span class="new-price">$21.99 | ₦9,300</span>
+                    </div>
+                    <button class="btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our <span class="text-red">Customers</span> Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best food in town! The burgers are absolutely delicious and the service is top-notch."</p>
+                    <div class="customer">
+                        <div class="customer-avatar">JD</div>
+                        <div class="customer-info">
+                            <h4>John Doe</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing pizza with fresh ingredients. Fast delivery and great prices. Highly recommended!"</p>
+                    <div class="customer">
+                        <div class="customer-avatar">SM</div>
+                        <div class="customer-info">
+                            <h4>Sarah Miller</h4>
+                            <p>Food Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The family combo is perfect for weekends. Great value for money and always fresh!"</p>
+                    <div class="customer">
+                        <div class="customer-avatar">MJ</div>
+                        <div class="customer-info">
+                            <h4>Mike Johnson</h4>
+                            <p>Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="text-red">Touch</span></h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Food Street, Victoria Island, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 (0) 812-345-6789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@foodplace.ng</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon - Sun: 10AM - 10PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Food<span class="highlight">Place</span></h3>
+                    <p>Delicious food, delivered fast. Quality ingredients, amazing taste.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive deals</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FoodPlace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
